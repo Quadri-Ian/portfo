@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/de85057d8c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-nobel">
+    <div class="relative flex justify-center  w-full h-screen">
+      <canvas id="c" class="absolute inset-0 z-[-1] bg-blablu m-0 fixed top-0 w-full"></canvas>
+      <div class="absolute flex justify-between lg:flex-col lg:justify-center items-center  w-full">
+      <div class="p-3 pl-6 w-full lg:flex justify-center">
+        <img class="w-10" src="logo-www.png" alt="Logo">
+      </div>
+      <div class="hidden text-lg  text-nobel justify-around w-full px-28 lg:flex">
+        <a href="#about" class="underline-red">About</a>
+        <a href="#projects" class="underline-red">Project</a>
+        <a href="https://github.com/Quadri-Ian" target="_blank" class="underline-red">Github</a>
+        <a href="malito:donovyian@gmail.com" class="underline-red">Contact Me</a>
+      </div>      
+      <div class="lg:hidden p-3 text-5xl transform  text-pinkish">
+        <button id="open-menu-btn" class="focus:outline-none">
+          <i class="fa-solid fa-burger"></i>    
+        </button>
+      </div>
+        
+      </div>
+ 
+    <!-- HTML -->
+    <div id="nav-menu" class="absolute bg-nblack w-full h-screen hidden">
+      <div class="flex items-center justify-center w-full h-screen">
+        <div class="absolute place-self-start">
+          <img class="w-10" src="logo-www.png" alt="Logo">
+        </div>
+        <div class="w-full absolute px-4 rounded-lg shadow-md place-self-center">
+          <div class="flex flex-row-reverse items-center justify-between">
+            <button id="close-menu-btn" class="text-5xl text-tillgreen bg-nblack p-1 rounded-full">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <!-- Add your menu items here -->
+            <div class="flex flex-col text-pinkish items-start text-3xl place-self-center">
+              <a href="#about" class="menu-item font-bold hover:text-gray-900 py-2">About</a>
+              <a href="#projects" class="menu-item font-bold hover:text-gray-900 py-2">Projects</a>
+              <a href="https://github.com/Quadri-Ian" target="_blank" class="menu-item font-bold hover:text-gray-900 py-2">GitHub</a>
+              <a href="#" class="menu-item font-bold hover:text-gray-900 py-2">Contact Me</a>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>           
+    <div class="p-4  font-bold  place-self-center px-6 w-[50%]">
+      <h1 class=" text-nobel text-3xl lg:text-5xl">
+        Hi, i'm <span class="text-pinkish">Ian Quadri</span>  | Software Engineer
+      </h1>
+      <div class="flex text-3xl text-pinkish gap-x-4 py-4">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div class=" text-milk ">
+        I love exploring and creating. I'm a lifelong learner and I might have a thing for you babe
+      </div>
+    </div>
+    </div>
+
+    <!-- about div -->
+    <div id="about" class="px-12 lg:px-24">
+    <h1 class="text-nblack text-4xl underline-red">About</h1>
+    <div class="grid items-center gap-x-8 gap-y-8 mt-8 lg:flex">
+
+      <div class="flex py-6 w-1/3 justify-center ">
+            <img class="rounded-lg  shadow-sm  shadow-blablu  hover:-translate-y-4 hover:shadow-2xl transition duration-500" src="images/ian.png" alt="">                       
+      </div>
+
+      <div  class="flex flex-col gap-y-4 w-full">
+        <div class="text-md text-nblack">
+          <p>I started playing with computers when I was 11 years-old. 
+            Since then I have been tinkering with all sorts of technologies
+             that in some way or another led me to work on music, 
+             photography, sound engineering, electric engineering, 
+             automation, video production, 
+            feature film post-production, VR games, and 3D sound.
+		  </p>
+        </div>
+        <div class="">
+          <p class="text-nblack text-3xl underline-red">        
+            Skills
+        </p>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-4">
+            <a href="" class="bg-nblack text-nobel p-2 ">JAVASCRIPT</a>
+            <a href="" class="bg-nblack text-nobel p-2">PYTHON</a>
+            <a href="" class="bg-nblack text-nobel p-2">REACT</a>
+            <a href="" class="bg-nblack text-nobel p-2 ">WORDPRESS</a>
+            <a href="" class="bg-nblack text-nobel p-2">SEO</a>
+            <a href="" class="bg-nblack text-nobel p-2">TAILWINDCSS</a>
+            <a href="" class="bg-nblack text-nobel p-2 ">SHOPIFY</a>
+            <a href="" class="bg-nblack text-nobel p-2">WEBFLOW</a>
+            <a href="" class="bg-nblack text-nobel p-2">APIs</a>
+            <a href="" class="bg-nblack text-nobel p-2 ">Wordpress</a>
+            <a href="" class="bg-nblack text-nobel p-2">SEO</a>
+            <a href="" class="bg-nblack text-nobel p-2">TailwindCss</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+<!-- projects div -->
+<div id="projects" class="px-12 mt-6 lg:px-24">
+<h2 class="text-nblack text-4xl underline-red ">Projects</h2>
+    <div class="lg:flex lg:flex-col items-center w-full">
+      <div class="grid items-center gap-y-8 mt-8 lg:flex">
+        <div  class="flex justify-center flex-col gap-y-4 w-full">
+          <div class="text-4xl text-nblack">
+            <p>Youtube clone</p>
+          </div>
+          <div class="flex gap-x-4">
+            <a href="" class="bg-nblack text-nobel p-2 ">Javascript</a>
+            <a href="" class="bg-nblack text-nobel p-2">Html</a>
+            <a href="" class="bg-nblack text-nobel p-2">tailwindss</a>
+          </div>
+          <div>
+            <p class="lg:w-1/2">        
+              I love exploring and creating. I'm a lifelong learner and I might have a thing for you babe
+            </p>
+          </div>
+          <div class="p-4 flex">
+            <a href="https://ubiquitous-belekoy-e8cb08.netlify.app/" class="bg-pinkish mt-[2.5px] ml-[3.1px] -translate-y-4 -translate-x-4 text-nobel py-4 px-12 hover:translate-y-0 hover:translate-x-0
+             transition duration-300">View Project</a>
+            <div class="absolute border border-solid border-2 border-nblack pb-[57.5px] px-[92px]    w-[119px]"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center px-4 py-6 lg:w-2/3 ">
+          <a href="https://ubiquitous-belekoy-e8cb08.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full shadow-sm  shadow-blablu  hover:-translate-y-4 hover:shadow-2xl transition duration-500" src="images/projectshot2.png" alt="">                       
+          </a>
+        </div>
+      </div>
+
+      <div class="grid items-center gap-y-8 mt-8 lg:flex">
+        <div  class="flex flex-col gap-y-4 w-full">
+          <div class="text-4xl text-nblack">
+            <p>Microsoft page</p>
+          </div>
+          <div class="flex gap-x-4">
+            <a href="" class="bg-nblack text-nobel p-2 ">Webflow</a>
+            <a href="" class="bg-nblack text-nobel p-2">Html</a>
+            <a href="" class="bg-nblack text-nobel p-2">Css</a>
+          </div>
+          <div>
+            <p class="lg:w-1/2">        
+              I love exploring and creating. I'm a lifelong learner and I might have a thing for you babe
+            </p>
+          </div>
+          <div class="p-4 flex">
+            <a href="https://preview.webflow.com/preview/github-clone?utm_medium=preview_link&utm_source=designer&utm_content=github-clone&preview=b57ce5962b5fc8a97c1de952f69271b2&workflow=preview" target="_blank" class="bg-pinkish mt-[2.5px] ml-[3.1px] -translate-y-4 -translate-x-4 text-nobel py-4 px-12 hover:translate-y-0 hover:translate-x-0
+             transition duration-300">View Project</a>
+            <div class="absolute border border-solid border-2 border-nblack pb-[57.5px] px-[92px]    w-[119px]"></div>
+          </div>
+        </div>
+
+        <div class="flex lg:justify-center px-4 py-6 lg:w-2/3 ">
+          <a href="https://preview.webflow.com/preview/github-clone?utm_medium=preview_link&utm_source=designer&utm_content=github-clone&preview=b57ce5962b5fc8a97c1de952f69271b2&workflow=preview" target="_blank">
+              <img class="rounded-lg w-full shadow-sm  shadow-blablu  hover:-translate-y-4 hover:shadow-2xl transition duration-500" src="images/microsoft.png" alt="">                       
+          </a>
+        </div>
+      </div>
+
+      <div class="grid items-center gap-y-8 mt-8 lg:flex">
+        <div  class="flex flex-col gap-y-4 w-full">
+          <div class="text-4xl text-nblack">
+            <p>Calculator</p>
+          </div>
+          <div class="flex gap-x-4">
+            <a href="" class="bg-nblack text-nobel p-2 ">React</a>
+            <a href="" class="bg-nblack text-nobel p-2">Html</a>
+            <a href="" class="bg-nblack text-nobel p-2">tailwindCss</a>
+          </div>
+          <div>
+            <p class="lg:w-1/2">        
+              I love exploring and creating. I'm a lifelong learner and I might have a thing for you babe
+            </p>
+          </div>
+          <div class="p-4 flex">
+            <a href="https://thriving-gumption-df1d4e.netlify.app/" target="_blank" class="bg-pinkish mt-[2.5px] ml-[3.1px] -translate-y-4 -translate-x-4 text-nobel py-4 px-12 hover:translate-y-0 hover:translate-x-0
+             transition duration-300">View Project</a>
+            <div class="absolute border border-solid border-2 border-nblack pb-[57.5px] px-[92px]    w-[119px]"></div>
+          </div>
+        </div>
+
+        <div class="flex lg:justify-center px-4 py-6 lg:w-2/3 ">
+          <a href="https://thriving-gumption-df1d4e.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full shadow-sm  shadow-blablu  hover:-translate-y-4 hover:shadow-2xl transition duration-500" src="images/calculator.png" alt="">                       
+          </a>
+        </div>
+      </div>
+
+      <div class="grid items-center gap-y-8 mt-8 lg:flex">
+        <div  class="flex flex-col gap-y-4 w-full">
+          <div class="text-4xl text-nblack">
+            <p>Dodo Pizza</p>
+          </div>
+          <div class="flex gap-x-4">
+            <a href="" class="bg-nblack text-nobel p-2 ">Javascript</a>
+            <a href="" class="bg-nblack text-nobel p-2">Html</a>
+            <a href="" class="bg-nblack text-nobel p-2">tailwindss</a>
+          </div>
+          <div>
+            <p class="lg:w-1/2">        
+              I love exploring and creating. I'm a lifelong learner and I might have a thing for you babe
+            </p>
+          </div>
+          <div class="p-4 flex">
+            <a href="https://rad-pothos-917842.netlify.app/" target="_blank" class="bg-pinkish mt-[2.5px] ml-[3.1px] -translate-y-4 -translate-x-4 text-nobel py-4 px-12 hover:translate-y-0 hover:translate-x-0
+             transition duration-300">View Project</a>
+            <div class="absolute border border-solid border-2 border-nblack pb-[57.5px] px-[92px]    w-[119px]"></div>
+          </div>
+        </div>
+
+        <div class="flex lg:justify-center px-4 py-6 lg:w-2/3 ">
+          <a href="https://rad-pothos-917842.netlify.app/" target="_blank">
+              <img class="rounded-lg w-full shadow-sm  shadow-blablu  hover:-translate-y-4 hover:shadow-2xl transition duration-500" src="images/dodopizza.png" alt="">                       
+          </a>
+        </div>
+      </div>
+      
+    </div>  
+</div>
+
+<div class="flex flex-col justify-center items-center mt-6 px-16">
+  <div class="text-nblack text-3xl">
+    <h2>
+      Like to have a chat with me?
+    </h2>
+  </div>
+  <div class="flex flex-col-reverse justify-center items-center">
+    <div>
+      <a href="malito:donovyian@gmail.com" class="text-pinkish">Donovyian@gmail.com</a>
+      <div class="p-4 flex">
+        <a href="https://preview.webflow.com/preview/github-clone?utm_medium=preview_link&utm_source=designer&utm_content=github-clone&preview=b57ce5962b5fc8a97c1de952f69271b2&workflow=preview" target="_blank" class="bg-pinkish mt-[2.5px] ml-[3.1px] -translate-y-4 -translate-x-4 text-nobel py-4 px-12 hover:translate-y-0 hover:translate-x-0
+         transition duration-300">Get in touch</a>
+        <div class="absolute border border-solid border-2 border-nblack pb-[57.5px] px-[92px]    w-[119px]"></div>
+      </div>
+    </div>
+    <div class="tea-cup text-3xl text-pinkish">
+      <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_dB9VtVabYu.json"  background="transparent"  speed="1"  style="width: 300px; height: 200px;" hover loop  autoplay></lottie-player>
+    </div>
+</div>
+</div>
+
+<footer class="bg-blablu mt-8 py-8  lg:flex justify-around px-12 ">
+<div class=" py-6">
+  <h2 class="text-nobel text-3xl py-2">Ian Quadri</h2>
+  <p class="text-offwhite w-1/2">© 2023, Built and designed by Ian Quadri</p>
+</div>
+
+<div class=" py-6 flex flex-col justify-center items-left">
+  <p class="text-offwhite text-lg">Links</p>
+  <div class="text-1xl flex flex-wrap items-left gap-2 w-1/2 md:w-2/3 font-bold py-2 text-pinkish">
+    <a href="#about" class="hover:text-milk transition duration-500">About</a>
+    <a href="#projects" class="hover:text-milk transition duration-500">Project</a>
+    <a href="https://github.com/Quadri-Ian" target="_blank" class="hover:text-milk transition duration-500">Github</a>
+    <a href="malito:donovyian@gmail.com" class="hover:text-milk transition duration-500">Contact</a>
+  </div>
+</div>
+
+<div class="text-offwhite py-6 ">
+  <h3 class="text-lg">
+    Get in touch
+  </h3>
+<div class="flex text-3xl font-bold text-offwhite py-2 gap-x-4">
+  <a href="https://github.com/Quadri-Ian" class="hover:text-pinkish transition duration-500">  <i class="fa-brands fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/ian-quadri-4694851b9" class="hover:text-pinkish transition duration-500"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://twitter.com/name__is_IAN?t=H9avTctlWvmuu7IMOQ0Srg&s=09" class="hover:text-pinkish transition duration-500"><i class="fa-brands fa-twitter"></i></a>
+  <a href="malito:donovyian@gmail.com" class="hover:text-pinkish transition duration-500"><i class="fa-solid fa-envelope"></i></a>  
+</div>  
+</div>
+
+
+</footer>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.underline-red {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .underline-red::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    bottom: -0.2em;
+    bottom: 0;
+    width: 100%;
+    height: 0.4em;
+    background-color: #ed6e5c;
+    z-index: -1;
+  }
+  
+ /* Style for the box */
+.displaced-box {
+    position: relative;
+    display: inline-block;
+  }
+
+  .displaced-box::after {
+    content: "";
+    position: absolute;
+    display: f;
+    left: 8px;
+    bottom: -10px;
+    border: 4px solid #36374d;
+    width: 100%;
+    height: 3.5em;
+    z-index: -1;
+  }
+  
+  /* Style for the link */
+  a {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  /* tea cup and bag */
+
+  
+  
+   
